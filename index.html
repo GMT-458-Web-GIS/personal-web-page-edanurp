@@ -105,3 +105,33 @@
             .catch(error => console.error('Error:', error));
         </script>
     </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h1>Contact</h1>
+        <main>
+            <div id="contact-content"></div>
+        </main>
+    
+        <footer>
+            <!-- Altbilgi içerikleri -->
+        </footer>
+    
+        <script>
+            fetch('contact.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('contact-content').innerHTML = data;
+            })
+            .catch(error => console.error('Error:', error));
+        </script>
+    </section>
+    
+    <section id="cv">
+        <a href="Cv Edanur.pdf" class="download-link">
+            <i class="fa fa-download"></i>
+            <span>Download CV</span>
+        </a>
+    </section>
+</body>
+</html>
