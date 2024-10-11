@@ -37,3 +37,23 @@
 </div>
         </div>
     </div>
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <main>
+            <div id="education-content"></div>
+        </main>
+    
+        <footer>
+            <!-- Altbilgi içerikleri -->
+        </footer>
+    
+        <script>
+            fetch('education.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('education-content').innerHTML = data;
+            })
+            .catch(error => console.error('Error:', error));
+        </script>
+    </section>
