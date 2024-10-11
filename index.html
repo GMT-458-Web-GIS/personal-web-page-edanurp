@@ -57,3 +57,19 @@
             .catch(error => console.error('Error:', error));
         </script>
     </section>
+
+    <!-- Project Section -->
+    <section id="project">
+        <h2>Project</h2>
+        <main>
+            <div id="project-content"></div>
+        </main>
+        <script>
+            fetch('project.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('project-content').innerHTML = data;
+            })
+            .catch(error => console.error('Error:', error));
+        </script>
+    </section>
