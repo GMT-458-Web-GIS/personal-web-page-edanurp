@@ -73,3 +73,19 @@
             .catch(error => console.error('Error:', error));
         </script>
     </section>
+
+    <!-- Internship Section -->
+    <section id="internship">
+        <h2>Internship</h2>
+        <main>
+            <div id="internship-content"></div>
+        </main>
+        <script>
+            fetch('internship.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('internship-content').innerHTML = data;
+            })
+            .catch(error => console.error('Error:', error));
+        </script>
+    </section>
