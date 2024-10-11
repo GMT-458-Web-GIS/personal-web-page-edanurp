@@ -89,3 +89,19 @@
             .catch(error => console.error('Error:', error));
         </script>
     </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies">
+        <h2>Hobbies</h2>
+        <main>
+            <div id="hobbies-content"></div>
+        </main>
+        <script>
+            fetch('hobbies.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('hobbies-content').innerHTML = data;
+            })
+            .catch(error => console.error('Error:', error));
+        </script>
+    </section>
