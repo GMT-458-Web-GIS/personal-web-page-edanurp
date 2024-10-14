@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="project">
+            <h1>GIS BASED WEBSİTE DESİGN</h1><br>
+            <p>Within the scope of this project, it is aimed to create a hotel reservation site that includes spatial data based on a geographical information system. The project aims to enable users to book hotels more accurately and quickly by filtering them according to their location.</p>
+            <a href="https://github.com/GMT-351-Geospatial-Data-Management/final-projects-group-8" target="_blank">Project details</a>
+            <h2>Some images of the project</h2>
+            
+            <div class="slider">
+                <button class="button left" onclick="moveSlide(-1)">&#10094;</button>
+                <div class="slides" id="slides">
+                    <img src="images/Gıs Homework image 1.jpg" alt="Image 1" class="active">
+                    <img src="images/GIS Homework image 2.jpg" alt="Image 2">
+                    <img src="images/GIS Homework image 4.jpg" alt="Image 4">
+                    <img src="images/GIS Homework image 5.jpg" alt="Image 5">
+                    <img src="images/GIS Homework image 6.jpg" alt="Image 6">
+                    <img src="images/GIS Homework image 7.jpg" alt="Image 7">
+                    <img src="images/GIS Homework image 8.jpg" alt="Image 8">
+                    <img src="images/GIS Homework image 9.jpg" alt="Image 9">
+                    <img src="images/GIS Homework image 10.jpg" alt="Image 10">
+                </div>
+                <button class="button right" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+
+    </header>
+
+    <script>
+        let currentSlide = 0;
+
+        function moveSlide(direction) {
+            const slides = document.querySelectorAll("#slides img");
+            const totalSlides = slides.length;
+
+            slides[currentSlide].classList.remove("active");
+
+            currentSlide += direction;
+
+            if (currentSlide < 0) {
+                currentSlide = totalSlides - 1; 
+            } else if (currentSlide >= totalSlides) {
+                currentSlide = 0; 
+            }
+
+            slides[currentSlide].classList.add("active");
+        }
+
+        window.onload = function() {
+            const slides = document.querySelectorAll('.slides img');
+            let maxHeight = 0;
+
+            slides.forEach((img) => {
+                if (img.naturalHeight > maxHeight) {
+                    maxHeight = img.naturalHeight;
+                }
+            });
+
+            const slider = document.querySelector('.slider');
+            slider.style.height = maxHeight + 'px';
+        };
+    </script>
+</body>
+</html>

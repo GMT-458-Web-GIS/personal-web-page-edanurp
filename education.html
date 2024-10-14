@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <link rel="stylesheet" href="education.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/hacettepe_logo.png" alt="Hacettepe Üniversitesi Logo" class="logo">
+            <h1>Hacettepe University Geomatics Engineering Department</h1>
+        </div>
+        <section>
+            <h2>What is Geomatics Engineering?</h2>
+            <p>
+                Geomatics Engineering, also known as Geospatial Engineering, is a field of engineering focused on the acquisition, analysis, interpretation, distribution, and management of geographic information. Geomatics engineers work with spatial data—data related to the Earth's surface—and use advanced technologies such as geographic information systems (GIS), remote sensing, global positioning systems (GPS), and satellite imagery.
+            </p>
+
+            <h3>Key Areas of Study</h3>
+            <ul>
+                <li><strong>Geographic Information Systems (GIS):</strong> GIS involves the storage, analysis, and visualization of spatial and geographic data, helping in decision-making for various industries like urban planning, agriculture, and environmental monitoring.</li>
+                <li><strong>Remote Sensing:</strong> This area focuses on the acquisition of information about the Earth's surface using satellites, drones, and other aerial platforms, allowing the analysis of land use, environmental changes, and disaster monitoring.</li>
+                <li><strong>Global Positioning System (GPS) & Geodesy:</strong> GPS and geodesy deal with precise positioning and measurements of the Earth, helping in navigation, mapping, and infrastructure development.</li>
+                <li><strong>Cartography:</strong> The science and art of map-making. Geomatics engineers create detailed and accurate maps used in various sectors such as transportation, urban planning, and resource management.</li>
+                <li><strong>Surveying:</strong> Surveying is one of the most fundamental aspects of geomatics engineering, involving measurements of land and terrain, ensuring accuracy in construction, boundary determination, and land development.</li>
+            </ul>
+            <h3>Applications of Geomatics Engineering</h3>
+            <p>Geomatics engineers play a crucial role in many fields due to the versatility of geospatial technologies. Some key application areas include:</p>
+            
+            <div class="slider3">
+                <button class="button left3" onclick="moveSlide3(-1)">&#10094;</button>
+                <div class="slides3" id="slides3">
+                    <img src="images/gnss.jpg" alt="Image 1" class="active3">
+                    <img src="images/jeodezi.gif" alt="Image 2">
+                    <img src="images/kartografya.png" alt="Image 4">
+                </div>
+                <button class="button right3" onclick="moveSlide3(1)">&#10095;</button>
+            </div>
+
+            <ul>
+                <li><strong>Urban Planning:</strong> Cities use geospatial data for infrastructure planning, zoning, and public services management.</li>
+                <li><strong>Agriculture:</strong> Precision farming relies on geomatics for monitoring crop health, soil conditions, and optimizing resource use with the help of remote sensing and GPS.</li>
+                <li><strong>Environmental Management:</strong> Tracking changes in forests, oceans, and glaciers, assessing environmental risks, and aiding conservation efforts.</li>
+                <li><strong>Disaster Management:</strong> Monitoring and responding to natural disasters such as earthquakes, floods, and forest fires through spatial data and remote sensing technologies.</li>
+                <li><strong>Transportation:</strong> Route optimization, traffic analysis, and infrastructure development for road networks, railways, and air traffic management.</li>
+            </ul>
+            
+            <h3>Why Study Geomatics Engineering?</h3>
+            <p>
+                Geomatics Engineering is an exciting and rapidly evolving field. It combines traditional surveying and mapping skills with cutting-edge technology like drones, satellite imagery, and big data analysis. Professionals in this field are essential to modern infrastructure projects, environmental monitoring, and the management of natural resources.
+            </p>
+            
+            <h3>Career Opportunities</h3>
+            <p>Geomatics engineers have a wide range of career options available, including:</p>
+            <ul>
+                <li>GIS Specialist</li>
+                <li>Remote Sensing Analyst</li>
+                <li>Surveyor</li>
+                <li>Cartographer</li>
+                <li>Urban Planner</li>
+                <li>Environmental Consultant</li>
+                <li>Drone Mapping Specialist</li>
+            </ul>
+            
+            <p>
+                Whether working in the public sector, private industry, or research, geomatics engineers are at the forefront of solving some of the most pressing challenges of today, from environmental sustainability to infrastructure development.
+            </p>
+        </section>
+        
+    </header>
+    <script>
+        let currentSlide = 0;
+
+        function moveSlide3(direction) {
+            const slides = document.querySelectorAll("#slides3 img");
+            const totalSlides = slides.length;
+
+            slides[currentSlide].classList.remove("active3");
+
+            currentSlide += direction;
+
+            if (currentSlide < 0) {
+                currentSlide = totalSlides - 1; 
+            } else if (currentSlide >= totalSlides) {
+                currentSlide = 0; 
+            }
+
+            slides[currentSlide].classList.add("active3");
+        }
+
+        window.onload = function() {
+            const slides = document.querySelectorAll('.slides3 img');
+            let maxHeight = 0;
+
+            slides.forEach((img) => {
+                if (img.naturalHeight > maxHeight) {
+                    maxHeight = img.naturalHeight;
+                }
+            });
+
+            const slider = document.querySelector('.slider3');
+            slider.style.height = maxHeight + 'px';
+        };
+    </script>
+</body>
+</html>

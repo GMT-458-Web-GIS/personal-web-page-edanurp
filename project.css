@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    color: black;
+    text-align: left; 
+    margin: 0; 
+}
+
+.project h1 {
+    margin-right: 20px;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.project p {
+    margin-right: 20px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.project a {
+    margin-top: 10px;
+    margin-right: 50px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: bold;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    margin-top: 30px;
+    max-width: 100%; 
+    height: auto; 
+    display: none; 
+}
+
+.slides img.active {
+    display: block;
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.button.left {
+    left: 10px;
+}
+
+.button.right {
+    right: 10px;
+}
+.project h2{
+    font-weight: bold;
+    margin-left: 600px;
+}
