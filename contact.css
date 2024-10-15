@@ -15,7 +15,7 @@ header {
 
 .new-text {
     color: black;
-    font-size: 25px;
+    font-size: 15px;
     display: inline-block;
     width: auto;
     font-weight: bold;
@@ -23,7 +23,7 @@ header {
     margin-top: 48px;
 }
 p{
-    font-size: 20px;
+    font-size: 10px;
     padding-left: 60px;
 
 }
@@ -43,15 +43,15 @@ p{
 }
 
 .icon i {
-    font-size: 50px; 
+    font-size: 30px; 
 }
 
 .icon p {
     margin-top: 10px;
-    font-size: 18px; 
+    font-size: 8px; 
 }
 .icon a {
-    font-size: 20px; 
+    font-size: 10px; 
 }
 
 
