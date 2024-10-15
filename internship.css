@@ -14,7 +14,7 @@ header {
 }
 
 header h1 {
-    font-size: 25px;
+    font-size: 15px;
 }
 
 .logo-container {
@@ -37,7 +37,7 @@ header h1 {
     margin-left: 20px;
     text-decoration: none;
     color: #333;
-    font-size: 16px;
+    font-size: 8px;
 }
 
 .internship-info {
@@ -46,7 +46,7 @@ header h1 {
 }
 
 .internship-info h2 {
-    font-size: 28px;
+    font-size: 18px;
     font-weight: bold;
     color: #333;
     border-bottom: 2px solid #333;
@@ -54,19 +54,19 @@ header h1 {
 }
 
 .logo-container h1 {
-    font-size: 25px;
+    font-size: 15px;
 }
 
 p {
-    font-size: 22px;
+    font-size: 12px;
 }
 
 h4 {
-    font-size: 20px;
+    font-size: 10px;
 }
 
 ul li {
-    font-size: 20px;
+    font-size: 10px;
 }
 
 .slides1 img, .slides2 img {
