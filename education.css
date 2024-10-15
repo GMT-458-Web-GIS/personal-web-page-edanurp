@@ -44,13 +44,14 @@ h3{
 .slider3 {
     position: relative;
     width: 100%; 
-    max-width: 800px; 
+    max-width: 600px; 
     margin: auto;
     overflow: hidden; /
 }
 
 .slides3 img {
     display: none; 
+    max-height: 300px; 
 }
 
 .slides3 img.active3 {
