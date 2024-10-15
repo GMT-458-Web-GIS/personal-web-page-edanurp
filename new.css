@@ -1,6 +1,6 @@
 
 .side-nav {
-    width: 300px;
+    width: 250px;
     position: fixed;
     top: 0;
     left: 0;
@@ -13,14 +13,14 @@
 
 .side-nav img {
     border-radius: 50%;
-    width: 200px; 
-    height: 200px; 
+    width: 150px; 
+    height: 150px; 
 }
 
 .side-nav h1 {
     color: white;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 18px;
     margin-top: 15px;
 }
 
@@ -36,7 +36,7 @@
 .side-nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 22px; 
+    font-size: 18px; 
 }
 
 .side-nav ul li a:hover {
@@ -56,7 +56,7 @@
 
 .content-section h2 {
     color: #333;
-    font-size: 28px;
+    font-size: 22px;
 }
 
 .download-link {
