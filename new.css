@@ -1,0 +1,123 @@
+
+.side-nav {
+    width: 300px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #333;
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+}
+
+.side-nav img {
+    border-radius: 50%;
+    width: 200px; 
+    height: 200px; 
+}
+
+.side-nav h1 {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+.side-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.side-nav ul li {
+    margin: 20px 0; 
+}
+
+.side-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px; 
+}
+
+.side-nav ul li a:hover {
+    color: #ccc;
+}
+
+.main-content {
+    margin-left: 320px; 
+    padding: 20px;
+}
+
+.content-section {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out; 
+}
+
+.content-section h2 {
+    color: #333;
+    font-size: 28px;
+}
+
+.download-link {
+    display: block;
+    text-align: center;
+    padding: 15px; 
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 250px; 
+    margin: 30px auto;
+}
+
+.download-link:hover {
+    background-color: #555;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    max-width: 100%;
+    display: none; 
+}
+
+.slides img.active {
+    display: block; 
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.button.left {
+    left: 10px;
+}
+
+.button.right {
+    right: 10px;
+}
